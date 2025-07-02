@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your OC - Bio (Muted SpaceHey Vibe)</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+    body {
+      background: url('https://www.transparenttextures.com/patterns/asfalt-light.png') repeat;
+      font-family: 'Comic Neue', cursive, sans-serif;
+      color: #3b3a36;
+      margin: 0;
+      padding: 25px;
+      background-color: #e7e2d6;
+      overflow-x: hidden;
+    }
+
+    .container {
+      background: linear-gradient(135deg, #d1c7b7 0%, #b8aa92 100%);
+      border: 4px solid #8a7f70;
+      padding: 25px;
+      max-width: 720px;
+      margin: 20px auto;
+      box-shadow: 0 0 15px rgba(138,127,112,0.5);
+      position: relative;
+      z-index: 10;
+      border-radius: 12px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 3px dashed #998e7e;
+      padding-bottom: 15px;
+      color: #4a473e;
+      font-weight: 700;
+      text-shadow: 1px 1px 0 #fff8f0;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+      letter-spacing: 3px;
+      font-weight: 700;
+      color: #5b5749;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 6px solid #c9bca3;
+      margin: 0 auto 15px;
+      display: block;
+      box-shadow: 0 4px 12px rgba(138,127,112,0.3);
+      object-fit: cover;
+      filter: drop-shadow(1px 1px 3px #a8997d);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      background: #f4f1e7;
+    }
+
+    .profile-pic:hover {
+      transform: scale(1.05) rotate(5deg);
+      filter: drop-shadow(1px 1px 6px #998e7e);
+    }
+
+    .tagline {
+      font-style: italic;
+      font-size: 1.3rem;
+      color: #7b7263;
+      margin-bottom: 15px;
+    }
+
+    section {
+      background: #f8f5f0cc;
+      padding: 15px 20px;
+      border: 2px solid #b8aa92;
+      margin-bottom: 18px;
+      box-shadow: inset 0 0 10px #cfc7b1;
+      border-radius: 10px;
+      color: #504b44;
+    }
+
+    section h2 {
+      margin-top: 0;
+      font-size: 1.9rem;
+      color: #7c6f56;
+      border-bottom: 1.5px solid #b8aa92;
+      padding-bottom: 6px;
+      margin-bottom: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #5a544a;
+      text-shadow: 0 0 1px #f7f4f0;
+    }
+
+    nav {
+      background: #b8aa92;
+      border: 2px solid #7c6f56;
+      border-radius: 8px;
+      text-align: center;
+      padding: 10px 0;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(124,111,86,0.4);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      font-weight: 700;
+      color: #4a453c;
+      background: #e7e2d6;
+      padding: 8px 16px;
+      margin: 0 10px;
+      text-decoration: none;
+      border: 2px solid #7c6f56;
+      border-radius: 10px;
+      box-shadow: 1px 1px 3px rgba(124,111,86,0.3);
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background: #7c6f56;
+      color: #e7e2d6;
+      border-color: #5a533f;
+      box-shadow: 0 0 10px #7c6f56;
+      transform: scale(1.05);
+    }
+
+    /* subtle flicker for headings */
+    @keyframes flicker {
+      0%, 100% {opacity: 1;}
+      50% {opacity: 0.8;}
+    }
+
+    header h1 {
+      animation: flicker 4s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="active">Bio</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="skills.html">Skills</a>
+    <a href="socials.html">Socials</a>
+  </nav>
+
+  <div class="container">
+    <header>
+      <img src="https://via.placeholder.com/150" alt="Your OC" class="profile-pic" />
+      <h1>Your OC's Name</h1>
+      <div class="tagline">“Catchy tagline or nickname”</div>
+    </header>
+
+    <section>
+      <h2>Bio</h2>
+      <p>Your OC’s short backstory or personality goes here. Keep it chill, keep it real.</p>
+    </section>
+
+    <section>
+      <h2>Personality</h2>
+      <p>Quirks, habits, mood swings, vibes — get messy with it.</p>
+    </section>
+
+    <section>
+      <h2>Fun Facts</h2>
+      <p>Favorite snacks, weird hobbies, secret powers, you name it.</p>
+    </section>
+  </div>
+</body>
+</html>
